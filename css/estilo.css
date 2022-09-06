@@ -10,35 +10,30 @@ body{
 }
 h1,h2,h3,h4,h5,h6{
    font-family: 'Open Sans', sans-serif;
+   text-align: center;
 }
 #topo, #menu,.destaques, section{
-   width: 900px;
+   width: 100%;
    margin:0 auto;
 }
-#topo h1{
-   animation:introducao 2s linear infinite alternate;
-   -webkit-animation:introducao 2s linear infinite alternate;
-   -moz-animation:introducao 2s linear infinite alternate;
-}
-@-webkit-keyframes introducao{
-   0%{color: red; -webkit-transform:rotate(0deg);}
-   25%{color: blue; -webkit-transform:rotate(5deg) scale(1.2);}
-   50%{color: green; -webkit-transform:rotate(0deg);}
-   75%{color: purple; -webkit-transform:rotate(-5deg) scale(1.2);}
-   100%{color: red; -webkit-transform:rotate(0deg);}
-}
-@keyframes introducao{
-   0%{color: red; -webkit-transform:rotate(0deg);}
-   25%{color: blue; -webkit-transform:rotate(5deg) scale(1.2);}
-   50%{color: green; -webkit-transform:rotate(0deg);}
-   75%{color: purple; -webkit-transform:rotate(-5deg) scale(1.2);}
-   100%{color: red; -webkit-transform:rotate(0deg);}
-}
+
 #menu li{
    display:inline;
 }
+#menu h2{
+      display: none;
+      
+
+
+}
+#menu ul{
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+}
+
 .destaques li{
-   width: 50%;
+   width: 100%;
    float: left;
    text-align: center;
    list-style: none;
@@ -56,8 +51,9 @@ h1,h2,h3,h4,h5,h6{
    width: 100%;
    display: block;
 }
-.center{
-   text-align: center;
+.center h2{
+   text-align: center ;
+
 }
 table, tr, td{
    border: 1px solid #000;
@@ -103,3 +99,36 @@ button{
 #rodape li {display: inline;
 }
 
+#topo h1{
+   animation:introducao 2s linear infinite alternate;
+   -webkit-animation:introducao 2s linear infinite alternate;
+   -moz-animation:introducao 2s linear infinite alternate;
+}
+@-webkit-keyframes introducao{
+   0%{color: red; -webkit-transform:rotate(0deg);}
+   25%{color: blue; -webkit-transform:rotate(5deg) scale(1.2);}
+   50%{color: green; -webkit-transform:rotate(0deg);}
+   75%{color: purple; -webkit-transform:rotate(-5deg) scale(1.2);}
+   100%{color: red; -webkit-transform:rotate(0deg);}
+}
+@keyframes introducao{
+   0%{color: red; -webkit-transform:rotate(0deg);}
+   25%{color: blue; -webkit-transform:rotate(5deg) scale(1.2);}
+   50%{color: green; -webkit-transform:rotate(0deg);}
+   75%{color: purple; -webkit-transform:rotate(-5deg) scale(1.2);}
+   100%{color: red; -webkit-transform:rotate(0deg);}
+}
+ #topo h2{
+      display: block;
+      font-size: 1.2em;
+
+ }
+
+.destaque li{
+ width: 50%;
+ float: left;
+ text-align: center;
+ list-style: none;
+ padding: 20% 0 ;
+
+}
